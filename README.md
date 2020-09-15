@@ -10,3 +10,4 @@ Brinque com seus familiares e amigos! 😄
 -  [Inkscape](https://inkscape.org/pt-br/)
 -  [VS Code](https://code.visualstudio.com/)
 -  [Icons 8](https://icons8.com/icons/set/present)
+- [Google Fonts](https://fonts.google.com/)
