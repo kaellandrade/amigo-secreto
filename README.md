@@ -1,5 +1,5 @@
 # Amigo Secreto 🎁
-Aplicação simples criada com o intuito de praticar um pouco JavaScript. 
+Aplicação simples criada com intuito de praticar um pouco JavaScript. 
 Brinque com seus familiares e amigos! 😄
 
 ![Amigo Secreto](print.png)
