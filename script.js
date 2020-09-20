@@ -84,7 +84,9 @@ function ExibeOsPares() {
         let tdNome1 = document.createElement('td');
         let tdNome2 = document.createElement('td');
         let tdButton = document.createElement('button');
+        let spam = document.createElement('spam');
 
+        spam.className = 'spam-hidden-name'
         tdButton.className = 'btn btn-view';
         tdButton.innerHTML = '<i class="far fa-eye"></i>';
 
@@ -99,7 +101,8 @@ function ExibeOsPares() {
         
         
         tdNome1.innerHTML = capitalize(amigo1);
-        divSecreto.innerHTML = capitalize(amigo2);
+        spam.innerHTML = capitalize(amigo2);
+        divSecreto.appendChild(spam);
         
         tdNome2.appendChild(divSecreto);
 
@@ -114,10 +117,13 @@ function ExibeOsPares() {
         // Mostra o amigo quando o botão click for apertado
         tdButton.addEventListener('mousedown', ()=>{
             divSecreto.className = 'mostrar';
+            spam.className = 'spam-visible-name';
         })
         // Esconde o amigo quando o botão click for solto
         tdButton.addEventListener('mouseup', ()=>{
             divSecreto.className = 'esconder';
+            spam.className = 'spam-hidden-name';
+
         })
     }
 

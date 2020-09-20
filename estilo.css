@@ -61,6 +61,13 @@ body{
     color: #ea5167;
     border-radius: 10px;
 }
+.spam-hidden-name{
+    visibility: hidden;
+}
+
+.spam-visible-name{
+    visibility: visible;
+}
 
 @keyframes pulse{
     0% {
