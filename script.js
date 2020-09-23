@@ -16,6 +16,10 @@ let pares = []; // Pares dos amigos formados exemplo:
 ]
 */
 
+window.addEventListener('load', ()=>{
+    btnSortear.disabled = true;
+    btnApagarTodos.disabled = true;
+})
 
 // Limpa a tabela e remove todos os amigos cadastrados;
 btnApagarTodos.addEventListener('click', ()=>{
@@ -115,15 +119,13 @@ function ExibeOsPares() {
         tabela.appendChild(tRow);
 
         // Mostra o amigo quando o botão click for apertado
-        tdButton.addEventListener('mousedown', ()=>{
+        tdButton.addEventListener('click', ()=>{
             divSecreto.className = 'mostrar';
             spam.className = 'spam-visible-name';
-        })
-        // Esconde o amigo quando o botão click for solto
-        tdButton.addEventListener('mouseup', ()=>{
-            divSecreto.className = 'esconder';
-            spam.className = 'spam-hidden-name';
-
+            let time = setTimeout(() => {
+                divSecreto.className = 'esconder';
+                spam.className = 'spam-hidden-name';
+            }, 3000);
         })
     }
 

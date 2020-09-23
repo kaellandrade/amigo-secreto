@@ -47,9 +47,8 @@ body{
 }
 
 .esconder{
-    background-image: linear-gradient(to right, rgba(233, 212, 212, 0.473), rgb(184, 179, 179));
-    color: transparent;
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #fde6517e, #ea516869);
+    border-radius: 5px;
 }
 .mostrar::after{
     content: " \1F381";
@@ -57,7 +56,6 @@ body{
 }
 
 .mostrar{
-    background-image: transparent;
     color: #ea5167;
     border-radius: 10px;
 }
